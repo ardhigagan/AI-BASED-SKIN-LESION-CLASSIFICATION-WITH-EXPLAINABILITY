@@ -513,10 +513,19 @@ function App() {
     setError("");
   };
 
-  const imageUrl = (path) => {
-    if (!path) return "";
-    return `${API_BASE}${path}`;
-  };
+  
+const imageUrl = (path) => {
+  if (!path) return "";
+
+  // Cloudinary URLs should be used directly.
+  if (/^https?:\/\//i.test(path)) {
+    return path;
+  }
+
+  // Local backend paths still work.
+  return `${API_BASE}${path.startsWith("/") ? "" : "/"}${path}`;
+};
+
 
   const visualizationPaths = report?.visualization
     ? {
