@@ -1,0 +1,14 @@
+
+Flask
+Flask-Cors
+python-dotenv
+torch
+torchvision
+numpy
+pandas
+Pillow
+opencv-python
+matplotlib
+scikit-learn
+openpyxl
+grad-cam

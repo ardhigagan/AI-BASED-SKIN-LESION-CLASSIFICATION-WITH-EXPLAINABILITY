@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Google Sans', 'Inter', system-ui, sans-serif;
+  color: #e3e3e3;
+  background: #131314;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Solid Google-style dark palette */
+  --bg: #131314;
+  --surface: #1e1f20;
+  --surface-2: #28292a;
+  --surface-hover: #2d2f31;
+  --border: #3c4043;
+  --border-soft: #2b2d30;
+  --text-primary: #e3e3e3;
+  --text-secondary: #a8abb0;
+  --text-muted: #80868b;
+
+  --blue: #8ab4f8;
+  --blue-strong: #4285f4;
+  --blue-container: #2b3a55;
+  --on-blue: #062e6f;
+  --green: #81c995;
+  --yellow: #fdd663;
+  --red: #f28b82;
+
+  --g-blue: #4285f4;
+  --g-red: #ea4335;
+  --g-yellow: #fbbc05;
+  --g-green: #34a853;
+
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --nav-h: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: #8ab4f840;
+}
+
+/* Safety net for extremely short windows only */
+@media (max-height: 520px) {
+  body {
+    overflow-y: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
