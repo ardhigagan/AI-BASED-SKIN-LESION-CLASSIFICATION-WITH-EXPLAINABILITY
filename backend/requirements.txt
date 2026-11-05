@@ -13,3 +13,4 @@ scikit-learn
 openpyxl
 grad-cam
 cloudinary
+gunicorn
