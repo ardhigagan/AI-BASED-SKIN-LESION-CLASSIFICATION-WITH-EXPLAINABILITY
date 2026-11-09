@@ -26,9 +26,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import "./App.css";
 
-const API_BASE =
-  import.meta.env.VITE_API_BASE_URL ||
-  "https://skin-lesion-backend-bwgc.onrender.com";
+const API_BASE = "https://ai-based-skin-lesion-classification-with.onrender.com";
 
 /* ---------- Six-stage processing pipeline ---------- */
 
