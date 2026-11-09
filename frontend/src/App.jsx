@@ -28,7 +28,7 @@ import "./App.css";
 
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL ||
-  "http://127.0.0.1:5000";
+  "https://skin-lesion-backend-bwgc.onrender.com";
 
 /* ---------- Six-stage processing pipeline ---------- */
 
